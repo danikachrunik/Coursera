@@ -12,6 +12,7 @@
 
     <!-- https://bootswatch.com/flatly CSS -->
     <link href="css/bootstrap_flatly.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,7 +22,7 @@
     <![endif]-->
   </head>
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -47,14 +48,34 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="page-header col-xs-12">
+        <div class="page-header col-md-8 col-md-offset-2">
           <h1>Tasks</h1>
           <h2><small>Current Tasks</small></h2>
         </div>
-      </div>
+      </div><!-- end row -->
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Pack for Vacation <span class="badge pull-right">Due Nov.14</span></h3>
+            </div>
+            <div class="panel-body">
+              <ul class="list-group">
+                <li class="list-group-item">Swimsuit</li>
+                <li class="list-group-item">Towel</li>
+                <li class="list-group-item">Sunscreen<span class="badge"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span></li>
+                <li class="list-group-item">Sunglasses<span class="badge"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span></li>
+                <li class="list-group-item">Shorts</li>
+                <li class="list-group-item">T-shirt</li>
+                <li class="list-group-item">Toothbrush<span class="badge"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!-- end row -->
     </div>
 
-    <footer>
+    <footer class="navbar-fixed-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
