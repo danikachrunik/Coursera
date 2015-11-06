@@ -1,0 +1,31 @@
+header {
+	background-color: #136813;
+}
+
+h1 {
+	text-align: center;
+	color: #B7E9B7;
+}
+
+h2 {
+	color: #136813;
+}
+
+section {
+	background-color: #B7E9B7;
+}
+
+img {
+	display: none;
+}
+
+a {
+	color: #136813;
+	text-decoration: none;
+	background-color: #B7E9B7;
+}
+
+a:hover {
+	color: #0CB5B8;
+	background-color: #0E1717;
+}
