@@ -1,17 +1,28 @@
-.crop-img{
-  max-height:150px;
-  max-width:100%;
-}
-
-.large-img{
-  max-width:100%;
-}
-
-.nav, .large-img, .crop-img{
+.large-img, .med-img, .crop-img{
   border-radius: 25px;
-  padding-top:5px;
+  padding-top: 5px;
 }
 
-.nav {
-  box-shadow: 10px 10px 5px #888888;
+.crop-img {
+  max-height: 150px;
+  max-width: 100%;
+}
+
+.med-img {
+	max-height: 250px;
+  max-width: 100%;
+}
+
+.large-img {
+  max-width: 100%;
+  margin-top: 100px;
+}
+
+.breadcrumb {
+  font-size: 1.2em;
+  color: #999;
+}
+
+.active {
+	font-weight: bold;
 }

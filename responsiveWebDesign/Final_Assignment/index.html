@@ -28,15 +28,20 @@
 	<body>
 
 		<div class="container">
+
+			<!-- Page Tile -->
 		  <div class="page-header text-center">
 		    <h1>Cool Animals</h1>
 		  </div>
 
-		  <ol class="breadcrumb">
-			  <li class="active"><a href="#" id="classes-tab">Classes</a></li>
+		  <!-- Breadcrum Nav -->
+		  <ol class="breadcrumb" id="breadcrumbs">
+			  <li id="classes-tab">Classes</li>
 			</ol>
 
-	    <div id="content"  class="container-fluid"  role="main">
+
+			<!-- Content Section -->
+	    <div id="content" class="container-fluid" role="main">
 		  </div>
 	  </div> <!-- end container -->
 
@@ -48,7 +53,7 @@
 		    {{#each category}}
 		    <div class="col-xs-12 col-md-4">
 		        <div class="class-thumbnail" data-id="{{@index}}">
-		          <img class="crop-img center-block" src="{{animals.[0].image1}}" alt=""/>
+		          <img class="crop-img center-block" src="{{animals.[0].image1}}" alt="{{name}}"/>
 		          <div class="caption">
 		              <h3 class="text-center"> {{name}} </h3>
 		          </div>
@@ -59,16 +64,15 @@
 		  </div> <!-- end row -->
 		</script>
 
-		<script id="animals-template" type="text/x-handlebars-template">
+		<script id="class-template" type="text/x-handlebars-template">
 		  <div class="row">
 
 		    {{#each animals}}
 		    <div class="col-xs-12 col-md-3">
-		     <div data-id="{{@index}}">
-		        <img class="crop-img" src="{{image1}}" alt=""/>
+		     <div class="animal-thumbnail" data-id="{{@index}}">
+		        <img class="crop-img" src="{{image1}}" alt="{{name}}"/>
 		         <div class="caption">
 		            <h3>{{name}}</h3>
-		            <p>{{description}}</p>
 		         </div>
 		      </div>
 
@@ -80,16 +84,21 @@
 
 		<script id="animal-template" type="text/x-handlebars-template">
 		  <div class="row">
-		    <div class="col-xs-12 col-md-12">
-		        <img class="large-img" src="{{image1}}" alt=""/>
 
-		        <div class="caption">
-		            <h3>{{name}}</h3>
-		            <p>{{description}}</p>
-		        </div>
+		    <div class="col-xs-12 col-sm-3">
+		      <img class="med-img" src="{{image1}}" alt="{{name}}"/>
+		    </div> <!-- end col -->
 
-		        <img class="large-img" src="{{image2}}" alt=""/>
-		      </div> <!-- end col -->
+		    <div class="col-xs-12 col-sm-9">
+		      <div class="caption">
+		        <h3>{{name}}</h3>
+		        <p>{{description}}</p>
+		      </div>
+		    </div> <!-- end col -->
+
+		    <div class="col-xs-12">
+		      <img class="large-img center-block" src="{{image2}}" alt="{{name}}"/>
+		    </div> <!-- end col -->
 
 		  </div> <!-- end row -->
 		</script>
