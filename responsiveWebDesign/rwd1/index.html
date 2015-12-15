@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Responsive Web Design: Assignment 1</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- https://bootswatch.com/flatly CSS -->
+    <link href="css/bootstrap_flatly.css" rel="stylesheet">
+    <link href="css/mystyles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Checklist App</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"
+                         aria-hidden="true"></span> Home</a></li>
+                    <li><a href="tasks.html"><span class="glyphicon glyphicon-th-list"
+                         aria-hidden="true"></span> Tasks</a></li>
+                    <li><a href="about.html"><span class="glyphicon glyphicon-info-sign"
+                         aria-hidden="true"></span> About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="page-header col-md-8 col-md-offset-2">
+          <h1>Home</h1>
+          <h2><small>Current Tasks</small></h2>
+        </div>
+      </div><!-- end row -->
+      <div class="row">
+      	<div class="col-md-8 col-md-offset-2">
+	        <ul class="list-group">
+	          <a href="tasks.html"><li class="list-group-item list-group-item-success">
+	            Clean kitchen<span class="badge"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+	          </li></a>
+	          <a href="tasks.html"><li class="list-group-item list-group-item-success">
+	            Tidy up desk<span class="badge"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+	          </li></a>
+	          <a href="tasks.html"><li class="list-group-item list-group-item-info">
+	            Renew passport<span class="badge">Due Nov.10</span>
+	          </li></a>
+	          <a href="tasks.html"><li class="list-group-item list-group-item-info">
+	            Pack for Vacation<span class="badge">Due Nov.14</span>
+	          </li></a>
+	          <a href="tasks.html"><li class="list-group-item list-group-item-info">
+	            Christmas shopping<span class="badge">Due Dec.24</span>
+	          </li></a>
+	        </ul>
+	    </div>
+      </div><!-- end row -->
+    </div><!-- end container-fluid -->
+
+    <footer class="navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                  <p align=center>© Copyright 2015 Checklist App</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

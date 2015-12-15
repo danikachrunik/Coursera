@@ -1,7 +1,12 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
 body {
 	margin: 0 auto;
 	max-width: 960px;
-	padding-top: 12px;
 }
 
 header {
@@ -49,7 +54,7 @@ nav>a:hover {
 	float: left;
 	background-color: #737A30;
 	width: 20%;
-	min-height: 500px;
+	min-height: 700px;
 }
 
 .right {
@@ -65,3 +70,37 @@ img {
 	margin: 24px auto;
 }
 
+table {
+	text-align: center;
+	border: 2px solid #fff;
+	font-family: sans-serif;
+	margin: 0 auto;
+}
+
+tr th:first-of-type, tr td:first-of-type {
+	text-align: left;
+}
+
+th {
+	border: 2px solid #73B530;
+	background-color: #939C3D;
+	color: #fff;
+	border-radius: 4px 4px 0 0;
+	padding: 12px;
+}
+
+tr {
+	opacity: 0.7;
+}
+
+tr:hover {
+	opacity: 1;
+}
+
+td {
+	background-color: #BFF594;
+	color: #333;
+	padding: 12px;
+	font-weight: bold;
+	font-size: 0.9em;
+}
