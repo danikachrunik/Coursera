@@ -1,0 +1,16 @@
+#food_1_img, #food_2_img, #food_3_img {
+	display: none;
+}
+
+.panel-heading {
+	height: 60px;
+}
+
+.panel h3 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.row {
+	padding-top: 60px;
+}
