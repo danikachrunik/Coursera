@@ -76,7 +76,7 @@ $(document).ready(function() {
 					$("#animal-name").remove();
 
 					// displays the class template
-					$(".class-thumbnail").click();
+					showTemplate(class_template, current_class);
 				});
 
 			});
