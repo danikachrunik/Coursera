@@ -42,14 +42,17 @@
                 </div>
               </div>
             </div><!-- end col -->
-            <div class="col-xs-9 col-xs-offset-2">
-              <label for="sort-by">Sort Comments By:
-              <input type="text" ng-model="sortBy" name="sortBy" id="sortBy">
-              </label>
+            <div class="col-xs-9 col-xs-offset-1">
+              <form class="form-inline">
+                <div class="form-group">
+                  <label for="sort-by"><h4 class="inline">Customer Comments <small>Sort By:</small></h4></label>
+                  <input type="text" name="sortBy" id="sortBy" ng-model="dishCtrl.setOrder">
+                </div>
+              </form>  
               <ul class="media-list tab-pane fade in active">
-                <li ng-repeat="comment in dishCtrl.dish.comments | orderBy : predicate : reverse">
+                <li ng-repeat="comment in dishCtrl.dish.comments | orderBy: dishCtrl.setOrder">
                   <blockquote>
-                    <span>{{comment.rating}}</span>
+                    <span>{{comment.rating}} Stars</span>
                     <p>{{comment.comment}}</p>
                     <footer>Posted by {{comment.author}} on {{comment.date | date : format : 'shortDate'}}</footer>
                   </blockquote>
@@ -67,7 +70,7 @@
 
         app.controller('dishDetailController', function() {
 
-          this.dish = {
+          var dish = {
               name:'Uthapizza',
               image: 'images/uthapizza.png',
               category: 'mains',
@@ -105,14 +108,32 @@
                 author:"25 Cent",
                 date:"2011-12-02T17:57:28.556094Z"
                 }
-              ];
+              ]
             };
-            this.predicate('date');
-              this.reverse = true;
-              this.order = function(predicate) {
-                this.reverse = (this.predicate === predicate) ? !this.reverse : false;
-                this.predicate = predicate;
-            };
+            this.dish = dish;
+
+            var setOrder = "date";
+            this.setOrder = setOrder;
+                
+            if (setOrder === "author") {
+                    this.orderComments = "author";
+                } 
+                else if (setOrder === "-author") {
+                    this.orderComments = "author";
+                } 
+                else if (setOrder === "rating") {
+                    this.orderComments = "rating";
+                } 
+                else if (setOrder === "-rating") {
+                  this.orderComments = "rating";
+                }
+                else if (setOrder === "-date") {
+                    this.orderComments = "date";
+                } 
+                else {
+                    this.orderComments = "date";
+                }
+
         });
 
     </script>
